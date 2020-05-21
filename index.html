@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chalein?</title>
+  <!-- <link href="style.scss" rel="stylesheet" type="text/css" /> -->
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="col-md-2"></div>
+  <div class="col-md-8" align="center">
+    <div class="row">
+      &nbsp;
+    </div>
+    <div>
+      <div class="row" onClick="red_butt()">
+        <img width="100" src="images/red-button.png" />
+      </div>
+      <div class="row">
+        <h4>Attachment Button</h4>
+      </div>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div>
+      <div class="row">
+        <h4 id="text">
+        </h4>
+      </div>
+      <div class="row">
+        <img id="image" width="100%" src="" />
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</body>
+<script>
+  var text = [
+    "Sky pretty you pretty? You duh. ",
+    "Fairy Lights wali aesthetic meha",
+    "Anime Meha",
+    "Art se literally rulane wali meha",
+    "Audiobook wali meha",
+    "Agli baar snacks le k jayenge",
+    "Booooooooootiful meha",
+    "Bindi wali meha",
+    "Blur wali meha",
+    "Bobblehead wali meha/(kauwa?)",
+    "Chande wali meha (moi still open for business)",
+    "Chappal wali meha",
+    "Daaka daalne wali meha",
+    "Bahut jaada cool meha",
+    "Cringe karne aur karane wali meha",
+    "Dalgona banane and banwane wali meha",
+    "Dance quality ki imaginations cross karane wali meha",
+    "Best date, because you. Sutta, beach, taare sab secondary.",
+    "Dil banake dil jeetne wali meha",
+    "Sunsets ko pretty banane wali meha",
+    "Majaak mei gussa karne wali gulabi meha",
+    "Zindagi bhar khaana banayenge saath, (with less cinnamon, promise)",
+    "Holi wali meha",
+    "Dental hygiene seriously lene wali meha",
+    "Jhumke wali meha",
+    "Jooode wali meha",
+    "I cook? You cook? WE cook",
+    "Itna cute banogi then kaise karein gussa? Marr jaayein?",
+    "Mehtab 'Meha' Singh Parmar",
+    "Metro pe saath dolne wali meha",
+    "Sangeet se sama banane wali meha",
+    "Naav chalane wali meha",
+    "Flirt karne wali meha",
+    "Flirt sehne wali meha",
+    "Cool cool virtual date karne wali meha",
+    "Padhai karne wali meha",
+    "Parle G wali meha",
+    "Peaceful af so ne wali meha",
+    "Pose karne ka try karne wali meha",
+    "Pyaar vyaar karti ho kya?",
+    "Video call pe bhi pretty dikhne wali meha",
+    "Same same meha",
+    "Doggo, beach, sunset - but still the most amazze in pic wali meha",
+    "Saxxxy meha",
+    "Safety wali meha",
+    "Shopping wali meha",
+    "Meri tatti photography skills ki unfortunate subject meha",
+    "Upma se pyaar karaane wali meha",
+    "Jox (ya mere) pe hansne wali meha",
+    "Ghar ko ghar banane wali meha"
+  ];
+  function red_butt() {
+    var rand = Math.floor(Math.random() * 50 + 1);
+    $("#text").text(text[rand - 1]);
+    $("#image").attr("src", "images/" + rand + ".jpg");
+  };
+</script>
+
+</html>
